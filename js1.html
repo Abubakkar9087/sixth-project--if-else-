@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting age using if else</title>
+    <style>
+        body{
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+        div{width: 300px;border-radius: 15px;box-shadow: 0 0 10px black; background-color: blue; padding: 20px;  display: flex;justify-content: center; align-items: center;}
+        form{padding: 10px;}
+        input{margin-bottom: 10px; border-radius: 10px; height: 20px; border: 1px solid black; padding: 10px;}
+        button{border: 1px solid black; border-radius: 10px;cursor: pointer; padding: 10px;}
+  </style>
+</head>
+
+<body>
+    <div> 
+        <form action="">
+            <h2 style="text-align: center; color: white;">Voting Age</h2>
+            <input type="number" id="input" placeholder="Enter Your Age" required style="width: 100%;"> <br>
+
+            <button id="alertBtn" style="width: 100%;">Click me</button>
+        </form>
+    </div>
+    <script>
+        let input = document.getElementById("input");
+        let alertBtn = document.getElementById("alertBtn");
+        alertBtn.addEventListener("click", function() {
+            let age = 18;
+            if (input.value>18){
+                alert("you can vote");
+            }
+            else{
+                alert("you cannot vote");
+            }
+        });
+    </script>
+</body>
+</html>
